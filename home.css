@@ -1,0 +1,161 @@
+*
+{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(198, 255, 172);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+.menu-bar{
+    background-color:green;
+    text-align:right;    
+}
+.menu-bar img{
+    margin-top: 8px;
+    margin-left: 8px;
+    float:left;
+    
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+    color:white;   
+
+}
+.menu-bar ul li{
+    width: 120px;
+    margin:8px;
+
+    padding: 8px;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    text-align: center;
+
+}
+span{
+    padding:5px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+.active, .menu-bar ul li:hover
+{
+    background-color:  #9cd629 ;
+    border-radius: 4px;
+}
+.sub-menu-1{
+    display:none;
+
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display:block;
+    position: absolute;
+    background-color: green;
+    margin-top:10px;
+    margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width:200px;
+    padding:5px;
+    border-bottom: 1px solid rgb(1, 58, 1);
+    text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom:none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:rgb(231, 255, 195);
+}
+.sub-menu-2{
+    display: none;
+}   
+.hover-me:hover .sub-menu-2{
+    display:block;
+    position: absolute;
+    background-color: green;
+    margin-top: -40px;
+    margin-left:130px;
+    color:rgb(231, 255, 195);
+}
+.sub-menu-3{
+    display: none;
+}
+.hover-me-2:hover .sub-menu-3{
+    display:block;
+    position:absolute;
+    background-color:green;
+    margin-top:-40px;
+    margin-left:130px;
+    color:white;
+}
+.pic{
+    background-image: url(p.jpg);
+    height:150px;
+    width: 1355px;
+    border:rgb(252, 187, 46) 10px solid;
+}
+.back{
+    float:right;
+    padding:100px;
+    padding-top:60px;
+    margin-right:100px;
+    
+    
+    height:600px;
+}
+.outer-box {
+    width:1355px;
+    height:350px;
+    overflow: hidden;
+    border:10px solid rgb(255, 255, 170);
+
+}
+.slider{
+    position:relative;
+    width: 4065px;
+    animation: nischal 20s infinite;
+}
+.slider img{
+    float: left;
+}
+@keyframes nischal{
+    0%
+    {
+        left:0px;
+    }
+    15%
+    {
+        left:0px;
+    }
+    30%
+    {
+        left: -1355px;
+    }
+    45%{
+        left:-1355px;
+    }
+    60%
+    {
+        left:-2710px;
+    }
+    80%{
+        left:-2710px;
+    }
+    100%{
+        left:-4065px;
+    } 
+       
+}
