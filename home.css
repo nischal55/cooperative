@@ -6,8 +6,8 @@
 }
 
 body{
-/*    background-color:rgb(198, 255, 172) */
-    background-color:red;
+ background-color:rgb(198, 255, 172);
+    
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
